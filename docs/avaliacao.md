@@ -17,43 +17,51 @@ Esta fora compras e fornecedores;contas a pagar;contas a receber; relatórios;ge
 Escolhi esse MVP para focar no processo principal, garantindo um fluxo funcional e integrado entre atendimento e controle de estoque.
 
 # 2. Regras de Negócio (mínimo: 5)
-Liste e descreva **cada RN** de forma clara.
 
-**RN01 —**  
-**RN02 —**  
-**RN03 —**  
-**RN04 —**  
-**RN05 —**  
-
-(Adicione mais se quiser.)
+**RN01 —**  Verificar estoque antes da venda
+O sistema deve conferir se tem o produto no estoque antes de vender.
+**RN02 —**  Não vender sem estoque
+Se não tiver quantidade suficiente, a venda não pode ser feita.
+**RN03 —**  Atualizar estoque após venda
+Quando a venda for finalizada, o estoque deve diminuir automaticamente.
+**RN04 —**  Cadastro de cliente para venda a prazo
+Se a venda for a prazo, o cliente precisa estar cadastrado.
+**RN05 —**  Emitir comprovante
+Toda venda deve gerar um comprovante.
 
 ---
 
 # 3. Requisitos Funcionais (mínimo: 8)
-Liste os requisitos funcionais do seu MVP.
 
-**RF01 —**  
-**RF02 —**  
-**RF03 —**  
-**RF04 —**  
-**RF05 —**  
-**RF06 —**  
-**RF07 —**  
-**RF08 —**  
-
-(Adicione mais se quiser.)
+**RF01 —**  Cadastrar cliente
+O sistema deve permitir cadastrar cliente.
+**RF02 —**  Buscar produto
+O sistema deve permitir procurar produto pelo nome ou código.
+**RF03 —**  Mostrar informações do produto
+O sistema deve mostrar preço e quantidade disponível.
+**RF04 —**  Adicionar produto na venda
+O atendente pode adicionar produtos na compra.
+**RF05 —**  Verificar estoque
+O sistema deve verificar automaticamente se tem no estoque.
+**RF06 —**  Calcular total
+O sistema deve mostrar o valor total da compra.
+**RF07 —**  Finalizar venda
+O sistema deve permitir finalizar a venda.
+**RF08 —**  Atualizar estoque
+O sistema deve atualizar o estoque depois da venda.
 
 ---
 
 # 🛡 4. Requisitos Não Funcionais (mínimo: 4)
-Liste os RNFs do sistema conforme seu MVP.
 
-**RNF01 —**  
-**RNF02 —**  
-**RNF03 —**  
-**RNF04 —**  
-
-(Adicione mais se quiser.)
+**RNF01 —**  Sistema rápido
+O sistema deve ser rápido para não atrasar o atendimento.
+**RNF02 —**  Fácil de usar
+O sistema deve ser simples para qualquer atendente usar.
+**RNF03 —**  Seguro
+Somente pessoas autorizadas podem usar o sistema.
+**RNF04 —**  Disponível
+O sistema deve funcionar durante o horário da farmácia.
 
 ---
 
