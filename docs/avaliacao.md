@@ -12,6 +12,7 @@ Processo de Venda integrado ao Estoque
 
 Meu MVP cobre o processo de venda de produtos desde a identificação/cadastro do cliente até a e emissão do comprovante. incluindo a verificação e atualização automática do estoque.
 
+Esta fora compras e fornecedores;contas a pagar;contas a receber; relatórios;gestão administrartiva
 
 # 2. Regras de Negócio (mínimo: 5)
 Liste e descreva **cada RN** de forma clara.
