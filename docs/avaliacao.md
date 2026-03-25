@@ -14,6 +14,8 @@ Meu MVP cobre o processo de venda de produtos desde a identificação/cadastro d
 
 Esta fora compras e fornecedores;contas a pagar;contas a receber; relatórios;gestão administrartiva
 
+Escolhi esse MVP para focar no processo principal, garantindo um fluxo funcional e integrado entre atendimento e controle de estoque.
+
 # 2. Regras de Negócio (mínimo: 5)
 Liste e descreva **cada RN** de forma clara.
 
