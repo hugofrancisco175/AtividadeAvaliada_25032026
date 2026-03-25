@@ -26,7 +26,7 @@ O sistema deve conferir se tem o produto no estoque antes de vender.
 
 Se não tiver quantidade suficiente, a venda não pode ser feita.
 
-**RN03 —**  Atualizar estoque após venda
+**RN03 —**  Atualizar estoque depois da venda
 
 Quando a venda for finalizada, o estoque deve diminuir automaticamente.
 
@@ -53,7 +53,7 @@ O sistema deve permitir procurar produto pelo nome ou código.
 
 **RF03 —**  Mostrar informações do produto
 
-O sistema deve mostrar preço e quantidade disponível.
+O sistema deve mostrar preço e quantidade.
 
 **RF04 —**  Adicionar produto na venda
 
@@ -85,7 +85,7 @@ O sistema deve ser rápido para não atrasar o atendimento.
 
 **RNF02 —**  Fácil de usar
 
-O sistema deve ser simples para qualquer atendente usar.
+O sistema deve ser simples.
 
 **RNF03 —**  Seguro
 
@@ -98,11 +98,8 @@ O sistema deve funcionar durante o horário da farmácia.
 ---
 
 # 5. Casos de Uso (mínimo: 10)
-### Inserir **diagrama de casos de uso geral**, demonstrando claramente:
-- os 10 casos
-- relação entre eles e atores
-- pelo menos 3 includes
-- pelo menos 3 extends
+
+<img width="808" height="338" alt="image" src="https://github.com/user-attachments/assets/769e36fb-2ba5-457c-86eb-cfe9dee47694" />
 
 ---
 
