@@ -9,6 +9,7 @@ Data: 25/03/2026
 
 # 1. Definição do MVP
 Processo de Venda integrado ao Estoque
+
 Meu MVP cobre o processo de venda de produtos desde a identificação/cadastro do cliente até a e emissão do comprovante. incluindo a verificação e atualização automática do estoque.
 
 
