@@ -19,15 +19,25 @@ Escolhi esse MVP para focar no processo principal, garantindo um fluxo funcional
 # 2. Regras de Negócio (mínimo: 5)
 
 **RN01 —**  Verificar estoque antes da venda
+
 O sistema deve conferir se tem o produto no estoque antes de vender.
+
 **RN02 —**  Não vender sem estoque
+
 Se não tiver quantidade suficiente, a venda não pode ser feita.
+
 **RN03 —**  Atualizar estoque após venda
+
 Quando a venda for finalizada, o estoque deve diminuir automaticamente.
+
 **RN04 —**  Cadastro de cliente para venda a prazo
+
 Se a venda for a prazo, o cliente precisa estar cadastrado.
+
 **RN05 —**  Emitir comprovante
+
 Toda venda deve gerar um comprovante.
+
 
 ---
 
