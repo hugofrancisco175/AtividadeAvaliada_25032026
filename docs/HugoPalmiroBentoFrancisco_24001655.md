@@ -1,14 +1,16 @@
 # Avaliação — Engenharia de Software
-**Sistema Integrado de Gestão de Farmácia — MVP Definido pelo Estudante**
+**Sistema Integrado de Gestão de Farmácia — Processo de Venda integrado ao Estoque**
 
 Aluno: Hugo Plamiro Bento Francisco
+
 RA: 24001655
+
 Data: 25/03/2026  
 
 ---
 
 # 1. Definição do MVP
-Processo de Venda integrado ao Estoque
+
 
 Meu MVP cobre o processo de venda de produtos desde a identificação/cadastro do cliente até a e emissão do comprovante. incluindo a verificação e atualização automática do estoque.
 
