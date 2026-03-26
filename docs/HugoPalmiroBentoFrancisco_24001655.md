@@ -124,7 +124,10 @@ O sistema deve funcionar durante o horário da farmácia.
 
 ### Relacionamentos
 - **Include:** Buscar Produto, Adicionar Produto  
-- **Extend:** Cadastrar Cliente, Identificar Cliente  
+- **Extend:** Cadastrar Cliente, Identificar Cliente
+
+ <img width="238" height="422" alt="image" src="https://github.com/user-attachments/assets/53715530-5194-443d-994f-a18653ea3a89" />
+
 
 ## **UC02 — Buscar Produto**
 **Ator(es):** Atendente  
@@ -144,7 +147,10 @@ O sistema deve funcionar durante o horário da farmácia.
 
 ### Relacionamentos
 - **Include:** —  
-- **Extend:** —  
+- **Extend:** —
+
+  <img width="278" height="257" alt="image" src="https://github.com/user-attachments/assets/0af2448a-7aa7-49b5-a3dc-2e776816f82e" />
+
 ## **UC03 — Adicionar Produto**
 **Ator(es):** Atendente  
 **Descrição:** Adiciona produto à venda.  
@@ -164,6 +170,8 @@ O sistema deve funcionar durante o horário da farmácia.
 ### Relacionamentos
 - **Include:** Verificar Estoque  
 - **Extend:** —  
+
+<img width="263" height="312" alt="image" src="https://github.com/user-attachments/assets/ed7e7717-9ad0-44d8-84c7-df25c47759dd" />
 
 
 ## **UC04 — Verificar Estoque**
@@ -186,6 +194,8 @@ O sistema deve funcionar durante o horário da farmácia.
 - **Include:** —  
 - **Extend:** —  
 
+<img width="248" height="257" alt="image" src="https://github.com/user-attachments/assets/1d2f304e-e513-45d3-b800-d93d6d36db9a" />
+
 
 ## **UC05 — Calcular Total**
 **Ator(es):** Sistema  
@@ -206,6 +216,8 @@ O sistema deve funcionar durante o horário da farmácia.
 ### Relacionamentos
 - **Include:** —  
 - **Extend:** —  
+
+<img width="198" height="193" alt="image" src="https://github.com/user-attachments/assets/cfc3057f-b85e-4efe-8e4c-bba3293d68cd" />
 
 
 ## **UC06 — Finalizar Venda**
@@ -228,6 +240,8 @@ O sistema deve funcionar durante o horário da farmácia.
 - **Include:** Calcular Total, Emitir Comprovante  
 - **Extend:** Registrar Venda a Prazo  
 
+<img width="197" height="396" alt="image" src="https://github.com/user-attachments/assets/29545ac9-0921-4531-80b4-60f494e96560" />
+
 
 ## **UC07 — Emitir Comprovante**
 **Ator(es):** Sistema  
@@ -248,6 +262,8 @@ O sistema deve funcionar durante o horário da farmácia.
 ### Relacionamentos
 - **Include:** —  
 - **Extend:** —  
+
+<img width="147" height="193" alt="image" src="https://github.com/user-attachments/assets/590dfe44-e4b6-4949-bf24-9b2a8f1020f8" />
 
 
 ## **UC08 — Cadastrar Cliente**
@@ -270,6 +286,8 @@ O sistema deve funcionar durante o horário da farmácia.
 - **Include:** —  
 - **Extend:** Realizar Venda  
 
+<img width="229" height="257" alt="image" src="https://github.com/user-attachments/assets/9fffb4e1-7785-498e-bf26-e40eb8d31e39" />
+
 
 ## **UC09 — Identificar Cliente**
 **Ator(es):** Atendente  
@@ -290,6 +308,8 @@ O sistema deve funcionar durante o horário da farmácia.
 ### Relacionamentos
 - **Include:** —  
 - **Extend:** Realizar Venda  
+
+<img width="260" height="257" alt="image" src="https://github.com/user-attachments/assets/5d85f45d-da81-4d52-95ec-b15d024e87e2" />
 
 
 ## **UC10 — Registrar Venda a Prazo**
@@ -312,6 +332,7 @@ O sistema deve funcionar durante o horário da farmácia.
 - **Include:** —  
 - **Extend:** Finalizar Venda  
 
+<img width="258" height="257" alt="image" src="https://github.com/user-attachments/assets/64e797de-0694-4066-8c09-eb011ea16ef2" />
 
 ---
 
