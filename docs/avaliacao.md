@@ -104,33 +104,217 @@ O sistema deve funcionar durante o horário da farmácia.
 ---
 
 # 6. Documentação dos Casos de Uso
-Para **cada caso de uso**, utilize o template abaixo:
 ---
 
-## **UCXX — Nome do Caso de Uso**
-**Ator(es):**  
-**Descrição:**  
-**Pré-condições:**  
-**Pós-condições:**  
+## **UC01 — Realizar Venda**
+**Ator(es):** Atendente  
+**Descrição:** Inicia o processo de venda.  
+**Pré-condições:** Sistema funcionando.  
+**Pós-condições:** Venda iniciada.  
 
 ### Fluxo Principal
-1.  
-2.  
-3.  
-4.  
+1. Atendente inicia venda  
+2. Sistema permite buscar produto  
+3. Atendente adiciona produtos  
+4. Sistema continua o processo  
 
 ### Fluxos Alternativos / Exceções
-- FA01 —  
-- FA02 —  
+- FA01 — Erro no sistema  
+- FA02 — Cancelar venda  
 
 ### Relacionamentos
-- **Include:** (listar quando aplicável)  
-- **Extend:** (listar quando aplicável)  
+- **Include:** Buscar Produto, Adicionar Produto  
+- **Extend:** Cadastrar Cliente, Identificar Cliente  
 
-### Inserir o diagrama de atividades do Caso de Uso, demonstrando tudo o fluxo princial e alternativos/exceções.
+## **UC02 — Buscar Produto**
+**Ator(es):** Atendente  
+**Descrição:** Permite procurar um produto.  
+**Pré-condições:** Produto cadastrado.  
+**Pós-condições:** Produto exibido.  
+
+### Fluxo Principal
+1. Atendente digita nome ou código  
+2. Sistema realiza busca  
+3. Sistema encontra produto  
+4. Sistema exibe resultado  
+
+### Fluxos Alternativos / Exceções
+- FA01 — Produto não encontrado  
+- FA02 — Erro na busca  
+
+### Relacionamentos
+- **Include:** —  
+- **Extend:** —  
+## **UC03 — Adicionar Produto**
+**Ator(es):** Atendente  
+**Descrição:** Adiciona produto à venda.  
+**Pré-condições:** Produto encontrado.  
+**Pós-condições:** Produto adicionado à venda.  
+
+### Fluxo Principal
+1. Atendente seleciona produto  
+2. Informa quantidade  
+3. Sistema verifica quantidade  
+4. Produto é adicionado  
+
+### Fluxos Alternativos / Exceções
+- FA01 — Quantidade inválida  
+- FA02 — Produto indisponível  
+
+### Relacionamentos
+- **Include:** Verificar Estoque  
+- **Extend:** —  
+
+
+## **UC04 — Verificar Estoque**
+**Ator(es):** Sistema  
+**Descrição:** Verifica se há produto disponível.  
+**Pré-condições:** Produto selecionado.  
+**Pós-condições:** Estoque validado.  
+
+### Fluxo Principal
+1. Sistema consulta estoque  
+2. Sistema verifica quantidade  
+3. Sistema valida disponibilidade  
+4. Retorna resultado  
+
+### Fluxos Alternativos / Exceções
+- FA01 — Sem estoque  
+- FA02 — Erro no sistema  
+
+### Relacionamentos
+- **Include:** —  
+- **Extend:** —  
+
+
+## **UC05 — Calcular Total**
+**Ator(es):** Sistema  
+**Descrição:** Calcula o valor total da compra.  
+**Pré-condições:** Produtos adicionados.  
+**Pós-condições:** Total calculado.  
+
+### Fluxo Principal
+1. Sistema soma valores  
+2. Sistema calcula total  
+3. Sistema atualiza valor  
+4. Exibe total  
+
+### Fluxos Alternativos / Exceções
+- FA01 — Erro de cálculo  
+- FA02 — Dados inválidos  
+
+### Relacionamentos
+- **Include:** —  
+- **Extend:** —  
+
+
+## **UC06 — Finalizar Venda**
+**Ator(es):** Atendente  
+**Descrição:** Finaliza a venda.  
+**Pré-condições:** Produtos adicionados.  
+**Pós-condições:** Venda concluída.  
+
+### Fluxo Principal
+1. Atendente confirma venda  
+2. Sistema calcula total  
+3. Sistema processa venda  
+4. Venda finalizada  
+
+### Fluxos Alternativos / Exceções
+- FA01 — Cancelamento da venda  
+- FA02 — Erro no sistema  
+
+### Relacionamentos
+- **Include:** Calcular Total, Emitir Comprovante  
+- **Extend:** Registrar Venda a Prazo  
+
+
+## **UC07 — Emitir Comprovante**
+**Ator(es):** Sistema  
+**Descrição:** Gera comprovante da venda.  
+**Pré-condições:** Venda finalizada.  
+**Pós-condições:** Comprovante emitido.  
+
+### Fluxo Principal
+1. Sistema gera comprovante  
+2. Sistema prepara dados  
+3. Sistema exibe comprovante  
+4. Sistema imprime ou salva  
+
+### Fluxos Alternativos / Exceções
+- FA01 — Erro na geração  
+- FA02 — Falha na impressão  
+
+### Relacionamentos
+- **Include:** —  
+- **Extend:** —  
+
+
+## **UC08 — Cadastrar Cliente**
+**Ator(es):** Atendente  
+**Descrição:** Permite cadastrar cliente.  
+**Pré-condições:** Cliente não cadastrado.  
+**Pós-condições:** Cliente registrado.  
+
+### Fluxo Principal
+1. Atendente informa dados  
+2. Sistema valida dados  
+3. Sistema salva cliente  
+4. Cadastro concluído  
+
+### Fluxos Alternativos / Exceções
+- FA01 — Dados inválidos  
+- FA02 — Cliente já existe  
+
+### Relacionamentos
+- **Include:** —  
+- **Extend:** Realizar Venda  
+
+
+## **UC09 — Identificar Cliente**
+**Ator(es):** Atendente  
+**Descrição:** Identifica cliente na venda.  
+**Pré-condições:** Cliente cadastrado.  
+**Pós-condições:** Cliente vinculado à venda.  
+
+### Fluxo Principal
+1. Atendente busca cliente  
+2. Sistema encontra cliente  
+3. Sistema seleciona cliente  
+4. Cliente vinculado  
+
+### Fluxos Alternativos / Exceções
+- FA01 — Cliente não encontrado  
+- FA02 — Erro na busca  
+
+### Relacionamentos
+- **Include:** —  
+- **Extend:** Realizar Venda  
+
+
+## **UC10 — Registrar Venda a Prazo**
+**Ator(es):** Atendente  
+**Descrição:** Registra venda a prazo.  
+**Pré-condições:** Cliente cadastrado.  
+**Pós-condições:** Venda registrada a prazo.  
+
+### Fluxo Principal
+1. Atendente escolhe venda a prazo  
+2. Sistema verifica cliente  
+3. Sistema registra venda  
+4. Venda concluída  
+
+### Fluxos Alternativos / Exceções
+- FA01 — Cliente não cadastrado  
+- FA02 — Erro no registro  
+
+### Relacionamentos
+- **Include:** —  
+- **Extend:** Finalizar Venda  
+
 
 ---
 
-> Repita essa estrutura para **todos os seus casos de uso** (mínimo 10).
+
 
 
